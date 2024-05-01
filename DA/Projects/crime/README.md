@@ -37,26 +37,26 @@ available from Los Angeles Open Data.
 | `'Vict Age'`  | Victim's age in years.                                                                                                                                                                                                                      |
 | `'Vict Sex'`  | Victim's sex: `F`: Female, `M`: Male, `X`: Unknown.                                                                                                                                                                                       |
 | `'Vict Descent'` | Victim's descent:                                                                                                                                                    |
-|                | - A - Other Asian
-- B - Black
-- C - Chinese
-- D - Cambodian
-- F - Filipino
-- G - Guamanian
-- H - Hispanic/Latin/Mexican
-- I - American Indian/Alaskan Native
-- J - Japanese
-- K - Korean
-- L - Laotian
-- O - Other
-- P - Pacific Islander
-- S - Samoan
-- U - Hawaiian
-- V - Vietnamese
-- W - White
-- X - Unknown
-- Z - Asian Indian
- |
+                | - A - Other Asian
+		| - B - Black
+		| - C - Chinese
+		|- D - Cambodian
+		|- F - Filipino
+		|- G - Guamanian
+		|- H - Hispanic/Latin/Mexican
+		|- I - American Indian/Alaskan Native
+		|- J - Japanese
+		|- K - Korean
+		|- L - Laotian
+		|- O - Other
+		|- P - Pacific Islander
+		|- S - Samoan
+		|- U - Hawaiian
+		|- V - Vietnamese
+		|- W - White
+		|- X - Unknown
+		|- Z - Asian Indian
+                
 | `'Weapon Desc'` | Description of the weapon used (if applicable).                                                                                                                                                                                            |
 | `'Status Desc'` | Crime status.                                                                                                                                                                                                                               |
 | `'LOCATION'`  | Street address of the crime.                                                                                                                                                                                                                |

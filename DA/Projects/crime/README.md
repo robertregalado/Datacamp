@@ -24,61 +24,24 @@ preview are provided below.
 It is a modified version of the original data, which is publicly
 available from Los Angeles Open Data.
 
-# crimes.csv {#crimescsv}
+# crimes.csv 
 
-  -------------------------------------------------------------------------------
-  Column                 Description
-  ---------------------- --------------------------------------------------------
-  `'DR_NO'`              Division of Records Number: Official file number made up
-                         of a 2-digit year, area ID, and 5 digits.
+| Column        | Description                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `'DR_NO'`     | Division of Records Number: Official file number made up of a 2-digit year, area ID, and 5 digits.                                                                                                                                                   |
+| `'Date Rptd'` | Date reported - MM/DD/YYYY.                                                                                                                                                                                                                 |
+| `'DATE OCC'`  | Date of occurrence - MM/DD/YYYY.                                                                                                                                                                                                            |
+| `'TIME OCC'`  | In 24-hour military time.                                                                                                                                                                                                                   |
+| `'AREA NAME'` | The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example, the 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles. |
+| `'Crm Cd Desc'` | Indicates the crime committed.                                                                                                                                                                                                             |
+| `'Vict Age'`  | Victim's age in years.                                                                                                                                                                                                                      |
+| `'Vict Sex'`  | Victim's sex: `F`: Female, `M`: Male, `X`: Unknown.                                                                                                                                                                                       |
+| `'Vict Descent'` | Victim's descent:                                                                                                                                                    |
+|                | `<ul>`{=html}<li>{=html}`A` - Other Asian</li>{=html}<li>{=html}`B` - Black</li>{=html}<li>{=html}`C` - Chinese</li>{=html}<li>{=html}`D` - Cambodian</li>{=html}<li>{=html}`F` - Filipino</li>{=html}<li>{=html}`G` - Guamanian</li>{=html}<li>{=html}`H` - Hispanic/Latin/Mexican</li>{=html}<li>{=html}`I` - American Indian/Alaskan Native</li>{=html}<li>{=html}`J` - Japanese</li>{=html}<li>{=html}`K` - Korean</li>{=html}<li>{=html}`L` - Laotian</li>{=html}<li>{=html}`O` - Other</li>{=html}<li>{=html}`P` - Pacific Islander</li>{=html}<li>{=html}`S` - Samoan</li>{=html}<li>{=html}`U` - Hawaiian</li>{=html}<li>{=html}`V` - Vietnamese</li>{=html}<li>{=html}`W` - White</li>{=html}<li>{=html}`X` - Unknown</li>{=html}<li>{=html}`Z` - Asian Indian</li>{=html} |
+| `'Weapon Desc'` | Description of the weapon used (if applicable).                                                                                                                                                                                            |
+| `'Status Desc'` | Crime status.                                                                                                                                                                                                                               |
+| `'LOCATION'`  | Street address of the crime.                                                                                                                                                                                                                |
 
-  `'Date Rptd'`          Date reported - MM/DD/YYYY.
-
-  `'DATE OCC'`           Date of occurrence - MM/DD/YYYY.
-
-  `'TIME OCC'`           In 24-hour military time.
-
-  `'AREA NAME'`          The 21 Geographic Areas or Patrol Divisions are also
-                         given a name designation that references a landmark or
-                         the surrounding community that it is responsible for.
-                         For example, the 77th Street Division is located at the
-                         intersection of South Broadway and 77th Street, serving
-                         neighborhoods in South Los Angeles.
-
-  `'Crm Cd Desc'`        Indicates the crime committed.
-
-  `'Vict Age'`           Victim\'s age in years.
-
-  `'Vict Sex'`           Victim\'s sex: `F`: Female, `M`: Male, `X`: Unknown.
-
-  `'Vict Descent'`       Victim\'s descent:`<ul>`{=html}`<li>`{=html}`A` - Other
-                         Asian`</li>`{=html}`<li>`{=html}`B` -
-                         Black`</li>`{=html}`<li>`{=html}`C` -
-                         Chinese`</li>`{=html}`<li>`{=html}`D` -
-                         Cambodian`</li>`{=html}`<li>`{=html}`F` -
-                         Filipino`</li>`{=html}`<li>`{=html}`G` -
-                         Guamanian`</li>`{=html}`<li>`{=html}`H` -
-                         Hispanic/Latin/Mexican`</li>`{=html}`<li>`{=html}`I` -
-                         American Indian/Alaskan
-                         Native`</li>`{=html}`<li>`{=html}`J` -
-                         Japanese`</li>`{=html}`<li>`{=html}`K` -
-                         Korean`</li>`{=html}`<li>`{=html}`L` -
-                         Laotian`</li>`{=html}`<li>`{=html}`O` -
-                         Other`</li>`{=html}`<li>`{=html}`P` - Pacific
-                         Islander`</li>`{=html}`<li>`{=html}`S` -
-                         Samoan`</li>`{=html}`<li>`{=html}`U` -
-                         Hawaiian`</li>`{=html}`<li>`{=html}`V` -
-                         Vietnamese`</li>`{=html}`<li>`{=html}`W` -
-                         White`</li>`{=html}`<li>`{=html}`X` -
-                         Unknown`</li>`{=html}`<li>`{=html}`Z` - Asian
-                         Indian`</li>`{=html}
-
-  `'Weapon Desc'`        Description of the weapon used (if applicable).
-
-  `'Status Desc'`        Crime status.
-
-  `'LOCATION'`           Street address of the crime.
-  -------------------------------------------------------------------------------
 
 ### How to approach the project?
 

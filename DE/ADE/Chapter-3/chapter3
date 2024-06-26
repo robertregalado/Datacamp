@@ -1,0 +1,99 @@
+Data models
+-Bottom-up, Kimball model=star & snowflake schemas
+
+Fact table
+-Measurements,metrics,or facts about an organization
+
+Dimension table
+-Dimensions/attributes about a process
+-Holds reference data
+-Dimension tables add more detail to fact table
+
+Star schema
+-A central fact table, with one or more dimensional tables
+-Easy for business users
+
+Snowflake schema
+-Dimension table connected through another dimensional table
+
+Kimball's four step process:
+
+Step 1-Select the organizational process
+ -Ask questions about a process
+ -Kimball bottom-up approach starts with a business process
+ 
+ Example of organizational processes:
+ -Invoice and billing
+ -Product quality monitoring
+ -Marketing
+ 
+Step 2-Declare the grain
+ -Grain=level to store fact table
+ -A level of data that cannot be split further
+ 
+Examples of business processes:
+-Music service->Song grain
+-Shipping service->Line  item grain
+
+Step 3-Identify the dimensions
+-Choose  dimensions that apply to each row
+-How to describe the data?
+-Business users and analysts=valuable
+
+Examples of common dimensions:
+ -Time:  year,quarter,and month
+ -Location:address,state,and country
+ -Users:names and email address
+ 
+Step 4-Identify the facts
+ -Numerical facts for each fact table  row
+ -What are we answering?
+ -Metricsshould be true at selected grain
+ 
+Examples of facts:
+-Music service:total number of plays,sales revenue of a song
+-Ride-sharing:travel distance,time needed
+
+Summary:
+
+Steps:
+1.Select the organizational process.
+2.Declare the grain.
+3.Identify the dimensions.
+4.Identify the facts.
+
+
+Slowly Changing Dimensions
+
+Type 1
+ -Updae value in table
+ -Will loose any history
+ 
+Type2
+ -Add a row with the updated value
+ -The history is retained
+ 
+Type 3
+ -Add column to dimension table to trace chnages
+ -Can view past and current data together
+ -Can require reporting changes and limited tracking
+ 
+Modern approach
+ -Snapshot the whole dimension table
+ -Use historical snapshots for historical reports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

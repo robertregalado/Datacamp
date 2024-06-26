@@ -1,0 +1,70 @@
+Data Warehouse
+-A computer system designed to store and analyze large amounts of data for an organization.
+
+What does a data warehouse do?
+-Gathers  data from different areas
+Integrats and stores the data
+Make it available for analysis
+
+What is a data warehouse valuable?
+-Support business intelligence activity
+-Enable effective analysis and decision-making
+-Foster data-driven innovation
+
+Data marts
+-A relational database for analysis
+-Data is focused  on one subject area
+-Few input data sources
+-Typically <100 GB in size
+
+Data Lake
+-Entire organization store of data
+	-Contains data from many  departments
+	-Many data input sources
+	-Typically >100 GB in size
+-Stores structured and unstructured data
+	-Examples: video,audio, and documents
+-Less complex to make changes
+	-Fewer upstream and downstream effects to consider
+-Purpose to store data may not be known
+	-Less organizes
+	
+High-lvel life cycle
+
+Planning
+-Business Requirements
+   -Understanding the business organizational needs
+   -Personas:
+      - Analyst & Data Scientist - collect requirements
+      
+-Data Modeling
+   -Planning and organizing on integrating data
+   -Personas:
+     -Data Engineer & Data Admins-design data pipeline
+     -Analyst & Data Scientist - data
+     
+Implementation
+-ETL Design & Development
+  -Implement data pipelines  and ETL process
+  -Personas:
+    -Data Engineer & Database Admins-implement data pipeline
+-BI Application Development
+  -Setup business intelligence(BI) tools
+  -Personas:
+    -Analyst & Data Scientist - consult on BI tool setup (e.g. tableau, looker)
+
+Support/Maintenance
+-Maintenance
+  -Make any needed modification
+  -Personas:
+    -Data Engineer-modify as needed
+-Test & Deploy
+  -Testing
+  -Personas:
+    -Analyst & Data Scientist-consult on BI tool setup
+    -Data Engineers-deploy the data warehouse
+    
+
+
+
+

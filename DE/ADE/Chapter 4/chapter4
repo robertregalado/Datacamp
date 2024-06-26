@@ -1,0 +1,201 @@
+ETL and ELT names
+
+ETL:
+1.Extract
+2.Transform
+3.Load
+
+ELT:
+1.Extract
+2.Load
+3.Transform
+
+Understanding ETL-Pros and Cons
+ -Data transformed during the above
+ -Uses separate system to process data
+Pros:
+ -Lower data storage costs
+ -PII security compliance
+ 
+Cons:
+ -Transformation errors/changes require new data pulls
+ -Costs of separate system to process data
+
+Understanding ELT-Pros and Cons
+ - Data is loaded, then transformed
+ - Uses the warehouse to transform the data
+ 
+Pros:
+ -No separate system to process data
+ -Transformations can be rerun without impacting source systems
+ -Works well for near real-time requirements
+ 
+Cons:
+ -Increased storage needs from raw data
+ -Compliance with PII security standards
+ 
+Data Cleaning
+
+Data format cleaning
+ -Update values to an expected format
+  -Dates
+  -Names of options
+  -Capitalization
+ -Ensures output is in a consistent format
+ 
+Address parsing
+ -Dividing  a street  address  into its components
+ -Can use tools to validate addresses
+ 
+Data validation
+ -Range check
+   -Is the value within the expected range?
+   -Example: A person's age
+ -Type check
+   -Is the value the proper data type?
+   -Example: Storing age as string vs number
+ 
+Duplicate row elimination
+ -This process gets rid of duplicate entries
+ 
+Data governance
+ -Standards
+ -Regulations
+ -Rules
+ -Transparency
+ -Law
+ -Requirements
+ 
+Data warehouse design example
+
+Let's set the stage
+ -A new startup company
+ -Photo sharing app
+ 
+Top-down, or bottoms up approach?
+
+Considerations:
+ -Vital to show business impact quickly
+ -Top-down approach has a longer startup process
+
+Decision:
+ -Bottom-up approach
+ -Sales data mart must the priority
+ 
+Kimball-select the organizational process(step 1)
+Considerations:
+ -What type of customers purchase large volumes of photos?
+
+Decision:
+ -Develop customer purchases
+
+Kimball-Declare the grain(step 2)
+Considerations:
+ -Data should be flexible to answer many questions
+ -Selecting the lowest grain possible
+Decision:
+ -Tracking customer/photo purchases
+ 
+Kimball-Identify the dimensions(step 3)
+Considerations:
+ -How do users describe the data that results the business process?
+ -Customer prioritization
+Decision:
+ -Customer location(country & state)
+ -Date customer joined
+ -Default payment method
+ 
+Kimball-Identify the facts(Step 4)
+Considerations:
+ -What are we answering?
+Decision:
+ -Time spent viewing photo before purchase
+ -Photo cost and tax
+ -Date of purchase
+ 
+On-premise or cloud implementation
+Considerations:
+ -We do not want upfront costs for hardware/software infrastructure
+ -Small team-focus on high volume activities
+Decision:
+ -Cloud implementation
+ 
+ETL or ELT implementation
+Considerations:
+ -Keep all data
+ -Cloud implementation allows us to scale compute as needed
+Decision:
+ -ELT implementation
+
+Summary
+ -Planning is critical
+ -Tailor your approach based on the situation
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

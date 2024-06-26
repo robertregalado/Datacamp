@@ -1,0 +1,162 @@
+Data source layer
+-All data sources for data warehouse
+-Examples of data sources:
+  -Transactional database
+  -Log files
+  -Spreadsheets
+  
+ Data staging layer
+ -Layer extracts, transform, and clean data through ETL process
+ -Contains ETL  process and storage tables
+ 
+ ETL process within data staging layer
+ -Extracted
+ -Business rules applied
+ -Staging database often used
+ -Must be able to extract valid data
+ -Batch / full loading
+ 
+ Data storage layer
+ -Data is stored  in warehouse and data marts
+  -Data warehouse->Data mart
+  -Data mart->Data warehouse
+  
+ Data presentation layer
+ -Users interact with stored data
+ -Users:
+   -Use BI(Business Intelligence) tools
+   -Use data mining tools
+   -Create direct queries
+   
+ Presentation layer tools
+ -Users interact with the presentation layer
+   -Area of constant development
+ 
+ Presentation Layer Groups:
+ -Automated reporting/dashboarding tools
+   -Goal:
+     -Create reports needed for decision making
+     -Create dashboards using historical data
+   -Users:
+     -Analysts
+     -Citizen Data Scientist
+ -BI/data analytics
+   -Goal:
+     -Tools for exploration(e.g. tableau,rapidminer,alteryx, looker,knime,oracle)
+     -Looking for patterns
+   -Users:
+     -Analysts
+     -Data Scientist
+ -Direct queries
+   -Goal:
+     -Sophisticated tools for exploration(e.g.Azure, Python, R)
+   -Users:
+     -Analysts
+     -Data Scientist
+     -Data Engineer
+     
+ Inmon-top-down
+ -Must decide:
+   -On all data definitions, cleaning, and business rules
+   -Before any data enters warehouse
+   
+ Pros and cons of top-down
+ Advantages:
+  -Single source of truth for organization
+  -Normalization=less storage
+  -Easy to change data marts to support reporting changes
+ 
+ Disadvantages:
+ -More joins=slower response time
+ -Lengthy upfront work
+  -Higher startup cost
+  
+Kimball-bottom-up
+ -Denormalizes data
+ -Focus on departmental data mart
+ -Data moves directly from ETL to data marts
+ 
+Pros and cons of bottom-up
+Advantages:
+ -Upfront development speed
+  -Lower starup cost
+ -Denormalized=user friendly
+ 
+Disadvantages:
+ -Increased  ETL processing time
+ -Greater possibility of duplicate data
+ -Ongoing development needed
+ 
+ 
+OLAP systems
+ -OLAP(online analytical processing)
+ -Designed to support analysis of large amounts of data
+ -Example dimesional organization;
+   -country, state, city
+   -years, months, days
+ -OLAP reorganizes data into multidimensional format
+ 
+OLAP cube
+-OLAP cube key to OLAP system
+-Faster processing vs. traditional relational databases
+-Hypercubes have more than three dimensions
+
+OLTP(online transaction processing)
+-Designedfor processing simple database queries
+-Used in source systems to data warehouse
+
+Example for a credit card company
+OLTP:
+ -System tracks customer's purchase
+ -Processes large amounts of simple database updates to account balances
+OLAP:
+ -Designed for anlyzing purchase data
+ -Data organized by multiple dimensions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
